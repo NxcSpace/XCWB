@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102F4CBDEDDD674B3EAE24F8 /* Pods_XCWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA167E72B63B18775DCECA5 /* Pods_XCWB.framework */; };
+		E705D95C240F8AE2002C349E /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D95B240F8AE2002C349E /* UIBarButtonItem-Extension.swift */; };
+		E705D95F240F930E002C349E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D95E240F930E002C349E /* TitleView.swift */; };
+		E705D962240F9FC0002C349E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D960240F9FC0002C349E /* PopoverViewController.swift */; };
+		E705D963240F9FC0002C349E /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E705D961240F9FC0002C349E /* PopoverViewController.xib */; };
+		E72B8563240F5F8B00F1ECCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B8562240F5F8B00F1ECCC /* BaseViewController.swift */; };
+		E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B8564240F605700F1ECCC /* VisitorView.swift */; };
+		E72B8567240F606B00F1ECCC /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72B8566240F606B00F1ECCC /* VisitorView.xib */; };
 		E753FDAD240E5A1D00ECDD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDAC240E5A1D00ECDD75 /* AppDelegate.swift */; };
 		E753FDB4240E5A1D00ECDD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753FDB2240E5A1D00ECDD75 /* Main.storyboard */; };
 		E753FDB6240E5A1F00ECDD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E753FDB5240E5A1F00ECDD75 /* Assets.xcassets */; };
@@ -18,9 +26,20 @@
 		E753FDD5240E79AC00ECDD75 /* WBTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDD4240E79AB00ECDD75 /* WBTabBarViewController.swift */; };
 		E753FDD9240E7EC100ECDD75 /* WBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDD8240E7EC100ECDD75 /* WBTabBar.swift */; };
 		E7A27ACA240E963300D6DF9B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E7A27AC9240E963300D6DF9B /* MainVCSettings.json */; };
+		E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7A633D216C4A7DE5CBC1FF6 /* Pods-XCWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWB.release.xcconfig"; path = "Target Support Files/Pods-XCWB/Pods-XCWB.release.xcconfig"; sourceTree = "<group>"; };
+		B1CBE72D8681F18A6566C3FD /* Pods-XCWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWB.debug.xcconfig"; path = "Target Support Files/Pods-XCWB/Pods-XCWB.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA167E72B63B18775DCECA5 /* Pods_XCWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E705D95B240F8AE2002C349E /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		E705D95E240F930E002C349E /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		E705D960240F9FC0002C349E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		E705D961240F9FC0002C349E /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		E72B8562240F5F8B00F1ECCC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E72B8564240F605700F1ECCC /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		E72B8566240F606B00F1ECCC /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		E753FDA9240E5A1D00ECDD75 /* XCWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E753FDAC240E5A1D00ECDD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E753FDB3240E5A1D00ECDD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,6 +53,7 @@
 		E753FDD4240E79AB00ECDD75 /* WBTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBarViewController.swift; sourceTree = "<group>"; };
 		E753FDD8240E7EC100ECDD75 /* WBTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBar.swift; sourceTree = "<group>"; };
 		E7A27AC9240E963300D6DF9B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +61,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102F4CBDEDDD674B3EAE24F8 /* Pods_XCWB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0059F381422D93104AE35C96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1CBE72D8681F18A6566C3FD /* Pods-XCWB.debug.xcconfig */,
+				A7A633D216C4A7DE5CBC1FF6 /* Pods-XCWB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCBE40F8047DF829F5E5C621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA167E72B63B18775DCECA5 /* Pods_XCWB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E705D95D240F92F2002C349E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E705D95E240F930E002C349E /* TitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E753FDA0240E5A1D00ECDD75 = {
 			isa = PBXGroup;
 			children = (
 				E753FDAB240E5A1D00ECDD75 /* XCWB */,
 				E753FDAA240E5A1D00ECDD75 /* Products */,
+				0059F381422D93104AE35C96 /* Pods */,
+				DCBE40F8047DF829F5E5C621 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +145,10 @@
 		E753FDC6240E5BD600ECDD75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E705D95D240F92F2002C349E /* View */,
 				E753FDCC240E78CA00ECDD75 /* HomeViewController.swift */,
+				E705D960240F9FC0002C349E /* PopoverViewController.swift */,
+				E705D961240F9FC0002C349E /* PopoverViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -105,6 +156,7 @@
 		E753FDC7240E5BD600ECDD75 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E7A27ACB240EB4FA00D6DF9B /* Tools */,
 				E753FDC4240E5BD600ECDD75 /* Main */,
 				E753FDC9240E5C0600ECDD75 /* Discover */,
 				E753FDC8240E5BFB00ECDD75 /* Message */,
@@ -134,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				E753FDD8240E7EC100ECDD75 /* WBTabBar.swift */,
+				E72B8564240F605700F1ECCC /* VisitorView.swift */,
+				E72B8566240F606B00F1ECCC /* VisitorView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				E753FDD4240E79AB00ECDD75 /* WBTabBarViewController.swift */,
+				E72B8562240F5F8B00F1ECCC /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +209,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		E7A27ACB240EB4FA00D6DF9B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E7A27ACC240EB50900D6DF9B /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E7A27ACC240EB50900D6DF9B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E705D95B240F8AE2002C349E /* UIBarButtonItem-Extension.swift */,
+				E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E753FDBD240E5A1F00ECDD75 /* Build configuration list for PBXNativeTarget "XCWB" */;
 			buildPhases = (
+				DBC19A5006FB3241875B191F /* [CP] Check Pods Manifest.lock */,
 				E753FDA5240E5A1D00ECDD75 /* Sources */,
 				E753FDA6240E5A1D00ECDD75 /* Frameworks */,
 				E753FDA7240E5A1D00ECDD75 /* Resources */,
+				A71B6BDC81C36A39EA945A00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E753FDB9240E5A1F00ECDD75 /* LaunchScreen.storyboard in Resources */,
+				E72B8567240F606B00F1ECCC /* VisitorView.xib in Resources */,
+				E705D963240F9FC0002C349E /* PopoverViewController.xib in Resources */,
 				E753FDB6240E5A1F00ECDD75 /* Assets.xcassets in Resources */,
 				E7A27ACA240E963300D6DF9B /* MainVCSettings.json in Resources */,
 				E753FDB4240E5A1D00ECDD75 /* Main.storyboard in Resources */,
@@ -221,6 +297,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A71B6BDC81C36A39EA945A00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCWB/Pods-XCWB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCWB/Pods-XCWB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCWB/Pods-XCWB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBC19A5006FB3241875B191F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCWB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E753FDA5240E5A1D00ECDD75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -228,11 +346,17 @@
 			files = (
 				E753FDCF240E78E000ECDD75 /* ProfileViewController.swift in Sources */,
 				E753FDAD240E5A1D00ECDD75 /* AppDelegate.swift in Sources */,
+				E705D962240F9FC0002C349E /* PopoverViewController.swift in Sources */,
+				E705D95C240F8AE2002C349E /* UIBarButtonItem-Extension.swift in Sources */,
 				E753FDD1240E78F100ECDD75 /* MessageViewController.swift in Sources */,
 				E753FDD5240E79AC00ECDD75 /* WBTabBarViewController.swift in Sources */,
 				E753FDCD240E78CA00ECDD75 /* HomeViewController.swift in Sources */,
+				E72B8563240F5F8B00F1ECCC /* BaseViewController.swift in Sources */,
 				E753FDD9240E7EC100ECDD75 /* WBTabBar.swift in Sources */,
+				E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */,
 				E753FDD3240E790800ECDD75 /* DiscoverViewController.swift in Sources */,
+				E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */,
+				E705D95F240F930E002C349E /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +498,7 @@
 		};
 		E753FDBE240E5A1F00ECDD75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CBE72D8681F18A6566C3FD /* Pods-XCWB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -392,6 +517,7 @@
 		};
 		E753FDBF240E5A1F00ECDD75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A633D216C4A7DE5CBC1FF6 /* Pods-XCWB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

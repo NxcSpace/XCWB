@@ -10,13 +10,9 @@ import UIKit
 
 class WBTabBar: UITabBar {
     ///发布按钮
-    lazy var button: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "tabbar_compose_icon_add"), for: .normal)
-        button.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
-        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
-        button.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .highlighted)
-        return button
+    lazy var composeBtn: UIButton = {
+        let composeBtn = UIButton(image: "tabbar_compose_icon_add", backImage: "tabbar_compose_button")
+        return composeBtn
     }()
     
     // MARK: - 布局
@@ -26,10 +22,10 @@ class WBTabBar: UITabBar {
         let w = self.frame.size.width / 5
         let h = self.frame.size.height
         
-        self.addSubview(button)
-        button.sizeToFit()
-        button.center.x = self.frame.size.width * 0.5
-        button.center.y = self.frame.size.height * 0.5
+        self.addSubview(composeBtn)
+        composeBtn.addTarget(self, action: Selector(("composeBtnClick")), for: .touchDown)
+        composeBtn.center.x = self.frame.size.width * 0.5
+        composeBtn.center.y = self.frame.size.height * 0.5
         
         var index = 0
         for case let item in self.subviews {
@@ -39,9 +35,15 @@ class WBTabBar: UITabBar {
                     index += 1
                 }
                 item.frame = CGRect(x: w * CGFloat(index), y: 0, width: w, height: h)
-                print(item.frame)
                 index += 1
             }
         }
     } 
+}
+
+// MARK: - 事件监听
+extension WBTabBar {
+    @objc private func composeBtnClick() {
+        print("composeBtn")
+    }
 }
