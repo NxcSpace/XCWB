@@ -9,7 +9,10 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
+    
+    lazy var popoverAnimator = PopoverAnimator { (isPop) in
+        self.titleView.isSelected = isPop
+    }
     lazy var popoverVC = PopoverViewController()
     lazy var titleView = TitleView()
     override func viewDidLoad() {
@@ -24,6 +27,7 @@ class HomeViewController: BaseViewController {
 
 }
 
+// MARK: - UI
 extension HomeViewController {
     func setupNavi() {
         let leftBtn = UIButton(imageForH: "navigationbar_friendattention")
@@ -39,16 +43,16 @@ extension HomeViewController {
     
 }
 
-extension HomeViewController{
+// MARK: - Action
+extension HomeViewController
+{
     @objc private func titleViewClick() {
-        print("ddd")
-        titleView.isSelected = !titleView.isSelected
-        
         popoverVC.view.backgroundColor = UIColor.clear
         popoverVC.modalPresentationStyle = .custom
+        popoverVC.transitioningDelegate = popoverAnimator
+        popoverAnimator.presentedFrame = CGRect(x: (UIScreen.main.bounds.size.width-200)*0.5, y: 60, width: 200, height: 300)
         present(popoverVC, animated: true, completion: nil)
-        
-        
     }
-    
 }
+
+

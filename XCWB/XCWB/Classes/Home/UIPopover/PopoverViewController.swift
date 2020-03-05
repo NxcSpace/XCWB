@@ -17,15 +17,15 @@ class PopoverViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        backImage.frame = CGRect(x: (UIScreen.main.bounds.size.width-200)*0.5, y: 64, width: 200, height: 300)
-        tableView.frame = CGRect(x: (UIScreen.main.bounds.size.width-180)*0.5, y: 74, width: 180, height: 280)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        dismiss(animated: true, completion: nil)
-    }
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        backImage.frame = CGRect(x: (UIScreen.main.bounds.size.width-200)*0.5, y: 64, width: 200, height: 300)
+//        tableView.frame = CGRect(x: (UIScreen.main.bounds.size.width-180)*0.5, y: 74, width: 180, height: 280)
+//    }
+//    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        dismiss(animated: true, completion: nil)
+//    }
 
     /*
     // MARK: - Navigation

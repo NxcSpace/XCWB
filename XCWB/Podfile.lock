@@ -1,16 +1,30 @@
 PODS:
   - Alamofire (5.0.2)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0)
+  - SDWebImage
+  - SnapKit (~> 5.0.0)
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SDWebImage
+    - SnapKit
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bd5f0173ed2494d9c765d1e6a8689e95df0f79d3
+PODFILE CHECKSUM: 264ef67c2eb03e579e350af355874b147b36e664
 
 COCOAPODS: 1.8.4

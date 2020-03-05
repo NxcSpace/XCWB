@@ -7,5 +7,7 @@ target 'XCWB' do
 
   # Pods for XCWB
   pod 'Alamofire', '~> 5.0'
-
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD'
 end

@@ -12,6 +12,8 @@
 		E705D95F240F930E002C349E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D95E240F930E002C349E /* TitleView.swift */; };
 		E705D962240F9FC0002C349E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D960240F9FC0002C349E /* PopoverViewController.swift */; };
 		E705D963240F9FC0002C349E /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E705D961240F9FC0002C349E /* PopoverViewController.xib */; };
+		E705D9662410CFC1002C349E /* WBPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D9652410CFC1002C349E /* WBPresentationController.swift */; };
+		E705D96824112977002C349E /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E705D96724112977002C349E /* PopoverAnimator.swift */; };
 		E72B8563240F5F8B00F1ECCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B8562240F5F8B00F1ECCC /* BaseViewController.swift */; };
 		E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B8564240F605700F1ECCC /* VisitorView.swift */; };
 		E72B8567240F606B00F1ECCC /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72B8566240F606B00F1ECCC /* VisitorView.xib */; };
@@ -37,6 +39,8 @@
 		E705D95E240F930E002C349E /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		E705D960240F9FC0002C349E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		E705D961240F9FC0002C349E /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		E705D9652410CFC1002C349E /* WBPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBPresentationController.swift; sourceTree = "<group>"; };
+		E705D96724112977002C349E /* PopoverAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		E72B8562240F5F8B00F1ECCC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E72B8564240F605700F1ECCC /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		E72B8566240F606B00F1ECCC /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
@@ -93,6 +97,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E705D9642410CF5D002C349E /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				E705D9652410CFC1002C349E /* WBPresentationController.swift */,
+				E705D960240F9FC0002C349E /* PopoverViewController.swift */,
+				E705D961240F9FC0002C349E /* PopoverViewController.xib */,
+				E705D96724112977002C349E /* PopoverAnimator.swift */,
+			);
+			path = UIPopover;
+			sourceTree = "<group>";
+		};
 		E753FDA0240E5A1D00ECDD75 = {
 			isa = PBXGroup;
 			children = (
@@ -145,10 +160,9 @@
 		E753FDC6240E5BD600ECDD75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E705D9642410CF5D002C349E /* UIPopover */,
 				E705D95D240F92F2002C349E /* View */,
 				E753FDCC240E78CA00ECDD75 /* HomeViewController.swift */,
-				E705D960240F9FC0002C349E /* PopoverViewController.swift */,
-				E705D961240F9FC0002C349E /* PopoverViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -344,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E705D9662410CFC1002C349E /* WBPresentationController.swift in Sources */,
 				E753FDCF240E78E000ECDD75 /* ProfileViewController.swift in Sources */,
 				E753FDAD240E5A1D00ECDD75 /* AppDelegate.swift in Sources */,
 				E705D962240F9FC0002C349E /* PopoverViewController.swift in Sources */,
@@ -353,6 +368,7 @@
 				E753FDCD240E78CA00ECDD75 /* HomeViewController.swift in Sources */,
 				E72B8563240F5F8B00F1ECCC /* BaseViewController.swift in Sources */,
 				E753FDD9240E7EC100ECDD75 /* WBTabBar.swift in Sources */,
+				E705D96824112977002C349E /* PopoverAnimator.swift in Sources */,
 				E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */,
 				E753FDD3240E790800ECDD75 /* DiscoverViewController.swift in Sources */,
 				E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */,
