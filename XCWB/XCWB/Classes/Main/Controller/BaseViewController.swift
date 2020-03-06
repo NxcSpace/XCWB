@@ -12,7 +12,7 @@ class BaseViewController: UITableViewController {
     // MARK: - 访客视图
     lazy var visitorView: VisitorView = VisitorView.visitorViewForNib()
     // MARK: - 是否登录
-    var isLogin: Bool = true
+    var isLogin: Bool = false
     
     // MARK: - 生命周期
     override func loadView() {
@@ -49,7 +49,12 @@ extension BaseViewController {
 // MARK: - Action
 extension BaseViewController {
     @objc private func loginBtnClick() {
-        print("log")
+        let oauthVC = OAuthViewController()
+        let navi = UINavigationController(rootViewController: oauthVC)
+        navi.modalPresentationStyle = .fullScreen
+        present(navi, animated: true, completion: nil)
+        
+        
     }
     
     @objc private func registerBtnClick() {
