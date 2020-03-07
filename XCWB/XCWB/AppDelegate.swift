@@ -12,12 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var defaultViewController: UIViewController{
+        let isLogin = UserAccountViewModal.shareIntance.isLogin
+        return isLogin ? WelcomeViewController() : WBTabBarViewController()
+        
+    }
     
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.rootViewController = WBTabBarViewController()
+        window?.rootViewController = defaultViewController
         window?.makeKeyAndVisible()
         
         UITabBar.appearance().tintColor = UIColor.orange

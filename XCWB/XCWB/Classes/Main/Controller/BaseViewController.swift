@@ -12,17 +12,18 @@ class BaseViewController: UITableViewController {
     // MARK: - 访客视图
     lazy var visitorView: VisitorView = VisitorView.visitorViewForNib()
     // MARK: - 是否登录
-    var isLogin: Bool = false
+    var isLogin: Bool = UserAccountViewModal.shareIntance.isLogin
     
     // MARK: - 生命周期
     override func loadView() {
+        
         isLogin ? super.loadView() : setupVisitorView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupUI()
+        print(UserAccountViewModal.shareIntance.userInfo ?? "")
     }
     
     
@@ -33,6 +34,7 @@ class BaseViewController: UITableViewController {
 extension BaseViewController {
     private func setupVisitorView() {
         view = visitorView
+        setupUI()
     }
     
     private func setupUI(){

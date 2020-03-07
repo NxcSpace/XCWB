@@ -22,6 +22,10 @@
 		E73F7CFC24123AF8002B841A /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73F7CFA24123AF8002B841A /* OAuthViewController.xib */; };
 		E73F7CFE24124428002B841A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F7CFD24124428002B841A /* Common.swift */; };
 		E73F7D002412891C002B841A /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F7CFF2412891C002B841A /* UserAccount.swift */; };
+		E73F7D0224136E76002B841A /* UserAccountViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F7D0124136E76002B841A /* UserAccountViewModal.swift */; };
+		E73F7D0624137350002B841A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F7D0424137350002B841A /* WelcomeViewController.swift */; };
+		E73F7D0724137350002B841A /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73F7D0524137350002B841A /* WelcomeViewController.xib */; };
+		E73F7D0A24139AA8002B841A /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F7D0924139AA8002B841A /* Status.swift */; };
 		E753FDAD240E5A1D00ECDD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDAC240E5A1D00ECDD75 /* AppDelegate.swift */; };
 		E753FDB4240E5A1D00ECDD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753FDB2240E5A1D00ECDD75 /* Main.storyboard */; };
 		E753FDB6240E5A1F00ECDD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E753FDB5240E5A1F00ECDD75 /* Assets.xcassets */; };
@@ -32,6 +36,11 @@
 		E753FDD3240E790800ECDD75 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDD2240E790800ECDD75 /* DiscoverViewController.swift */; };
 		E753FDD5240E79AC00ECDD75 /* WBTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDD4240E79AB00ECDD75 /* WBTabBarViewController.swift */; };
 		E753FDD9240E7EC100ECDD75 /* WBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FDD8240E7EC100ECDD75 /* WBTabBar.swift */; };
+		E75B48B02413B0D20046017E /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48AF2413B0D20046017E /* NSDate-Extension.swift */; };
+		E75B48B22413BFC30046017E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48B12413BFC30046017E /* User.swift */; };
+		E75B48B42413C3E80046017E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48B32413C3E80046017E /* UserViewModel.swift */; };
+		E75B48B72413D0030046017E /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48B52413D0030046017E /* HomeViewCell.swift */; };
+		E75B48B82413D0030046017E /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75B48B62413D0030046017E /* HomeViewCell.xib */; };
 		E7A27ACA240E963300D6DF9B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E7A27AC9240E963300D6DF9B /* MainVCSettings.json */; };
 		E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +63,10 @@
 		E73F7CFA24123AF8002B841A /* OAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
 		E73F7CFD24124428002B841A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E73F7CFF2412891C002B841A /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		E73F7D0124136E76002B841A /* UserAccountViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewModal.swift; sourceTree = "<group>"; };
+		E73F7D0424137350002B841A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E73F7D0524137350002B841A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		E73F7D0924139AA8002B841A /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		E753FDA9240E5A1D00ECDD75 /* XCWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E753FDAC240E5A1D00ECDD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E753FDB3240E5A1D00ECDD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +79,11 @@
 		E753FDD2240E790800ECDD75 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		E753FDD4240E79AB00ECDD75 /* WBTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBarViewController.swift; sourceTree = "<group>"; };
 		E753FDD8240E7EC100ECDD75 /* WBTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBar.swift; sourceTree = "<group>"; };
+		E75B48AF2413B0D20046017E /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		E75B48B12413BFC30046017E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E75B48B32413C3E80046017E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E75B48B52413D0030046017E /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		E75B48B62413D0030046017E /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
 		E7A27AC9240E963300D6DF9B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				E705D95E240F930E002C349E /* TitleView.swift */,
+				E75B48B52413D0030046017E /* HomeViewCell.swift */,
+				E75B48B62413D0030046017E /* HomeViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,8 +144,38 @@
 				E73F7CF924123AF8002B841A /* OAuthViewController.swift */,
 				E73F7CFA24123AF8002B841A /* OAuthViewController.xib */,
 				E73F7CFF2412891C002B841A /* UserAccount.swift */,
+				E73F7D0124136E76002B841A /* UserAccountViewModal.swift */,
 			);
 			path = OAuth;
+			sourceTree = "<group>";
+		};
+		E73F7D0324137314002B841A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E73F7D0424137350002B841A /* WelcomeViewController.swift */,
+				E73F7D0524137350002B841A /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		E73F7D0824139A7A002B841A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E753FDCC240E78CA00ECDD75 /* HomeViewController.swift */,
+				E73F7D0B24139AB1002B841A /* Model */,
+				E705D95D240F92F2002C349E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E73F7D0B24139AB1002B841A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E73F7D0924139AA8002B841A /* Status.swift */,
+				E75B48B12413BFC30046017E /* User.swift */,
+				E75B48B32413C3E80046017E /* UserViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E753FDA0240E5A1D00ECDD75 = {
@@ -162,6 +212,7 @@
 		E753FDC4240E5BD600ECDD75 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E73F7D0324137314002B841A /* Welcome */,
 				E73F7CF824123AD2002B841A /* OAuth */,
 				E7A27AC8240E963300D6DF9B /* Resource */,
 				E753FDD7240E7E8600ECDD75 /* Controller */,
@@ -181,9 +232,8 @@
 		E753FDC6240E5BD600ECDD75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E73F7D0824139A7A002B841A /* Home */,
 				E705D9642410CF5D002C349E /* UIPopover */,
-				E705D95D240F92F2002C349E /* View */,
-				E753FDCC240E78CA00ECDD75 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -259,6 +309,7 @@
 			children = (
 				E705D95B240F8AE2002C349E /* UIBarButtonItem-Extension.swift */,
 				E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */,
+				E75B48AF2413B0D20046017E /* NSDate-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -326,8 +377,10 @@
 				E753FDB9240E5A1F00ECDD75 /* LaunchScreen.storyboard in Resources */,
 				E72B8567240F606B00F1ECCC /* VisitorView.xib in Resources */,
 				E705D963240F9FC0002C349E /* PopoverViewController.xib in Resources */,
+				E75B48B82413D0030046017E /* HomeViewCell.xib in Resources */,
 				E753FDB6240E5A1F00ECDD75 /* Assets.xcassets in Resources */,
 				E7A27ACA240E963300D6DF9B /* MainVCSettings.json in Resources */,
+				E73F7D0724137350002B841A /* WelcomeViewController.xib in Resources */,
 				E753FDB4240E5A1D00ECDD75 /* Main.storyboard in Resources */,
 				E73F7CFC24123AF8002B841A /* OAuthViewController.xib in Resources */,
 			);
@@ -388,18 +441,25 @@
 				E73F7CFB24123AF8002B841A /* OAuthViewController.swift in Sources */,
 				E73F7CFE24124428002B841A /* Common.swift in Sources */,
 				E73F7D002412891C002B841A /* UserAccount.swift in Sources */,
+				E73F7D0624137350002B841A /* WelcomeViewController.swift in Sources */,
 				E753FDAD240E5A1D00ECDD75 /* AppDelegate.swift in Sources */,
 				E705D962240F9FC0002C349E /* PopoverViewController.swift in Sources */,
 				E705D95C240F8AE2002C349E /* UIBarButtonItem-Extension.swift in Sources */,
+				E73F7D0224136E76002B841A /* UserAccountViewModal.swift in Sources */,
+				E75B48B02413B0D20046017E /* NSDate-Extension.swift in Sources */,
 				E753FDD1240E78F100ECDD75 /* MessageViewController.swift in Sources */,
 				E753FDD5240E79AC00ECDD75 /* WBTabBarViewController.swift in Sources */,
 				E753FDCD240E78CA00ECDD75 /* HomeViewController.swift in Sources */,
 				E72B8563240F5F8B00F1ECCC /* BaseViewController.swift in Sources */,
+				E73F7D0A24139AA8002B841A /* Status.swift in Sources */,
 				E753FDD9240E7EC100ECDD75 /* WBTabBar.swift in Sources */,
 				E705D96824112977002C349E /* PopoverAnimator.swift in Sources */,
 				E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */,
+				E75B48B22413BFC30046017E /* User.swift in Sources */,
+				E75B48B72413D0030046017E /* HomeViewCell.swift in Sources */,
 				E753FDD3240E790800ECDD75 /* DiscoverViewController.swift in Sources */,
 				E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */,
+				E75B48B42413C3E80046017E /* UserViewModel.swift in Sources */,
 				E705D95F240F930E002C349E /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

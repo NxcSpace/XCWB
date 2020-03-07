@@ -52,7 +52,8 @@ extension OAuthViewController {
         dismiss(animated: true, completion: nil)
     }
     @objc private func inputClick(){
-        let jsCode = ""
+        let jsCode =
+        ""
         webView.stringByEvaluatingJavaScript(from: jsCode)
     }
 }
@@ -122,10 +123,21 @@ extension OAuthViewController {
                 print("字典出错")
                 return
             }
-            
+           
             userInfo.avatar_large = userInfoDict["avatar_large"] as? String
             userInfo.screen_name = userInfoDict["screen_name"] as? String
             print(userInfo)
+            
+            var path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
+            path = (path as NSString).appendingPathComponent("user.plist")
+            NSKeyedArchiver.archiveRootObject(userInfo, toFile: path)
+            
+            UserAccountViewModal.shareIntance.userInfo = userInfo
+             
+            self.dismiss(animated: true) {
+                UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
+            }
+            
         }) { (error) in
             
         }

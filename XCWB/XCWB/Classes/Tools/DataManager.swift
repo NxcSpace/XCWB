@@ -38,7 +38,7 @@ extension DataManager{
                                                                                "redirect_uri":redirect_uri], success: success, fail: fail)
     }
 
-    
+    // MARK: - 请求个人信息
     public func loadUserInfo(userInfo: UserAccount,
                              success:@escaping ResponseSuccess,
                              fail: @escaping ResponseFail) {
@@ -52,6 +52,22 @@ extension DataManager{
                       "uid":uid]
     
         xc_getWith(url: "https://api.weibo.com/2/users/show.json", params: params, success: success, fail: fail)
+    }
+    
+    public func loadStatuses(page: Int,
+                             count: Int,
+                             success:@escaping ResponseSuccess,
+                             fail: @escaping ResponseFail) {
+       
+        guard let token = UserAccountViewModal.shareIntance.userInfo?.access_token else {
+            return
+        }
+       
+        let params = ["access_token":token,
+                      "page":page,
+                      "count":count] as [String : Any]
+    
+        xc_getWith(url: "https://api.weibo.com/2/statuses/home_timeline.json", params: params, success: success, fail: fail)
     }
 }
 
