@@ -25,11 +25,21 @@ class Status: NSObject {
     ///用户信息
     @objc var user : User?
     
+    ///配图信息
+    @objc var pic_urls : [[String : String]]?
+    
+    ///转发微博
+    @objc var retweeted_status : Status?
+    
     init(dict: [String: Any]) {
         super.init()
         setValuesForKeys(dict)
         if let userDict = dict["user"] as? [String : Any] {
             user = User(dict: userDict)
+        }
+        
+        if let retweetedDict = dict["retweeted_status"] as? [String : Any] {
+            retweeted_status = Status(dict: retweetedDict)
         }
         
     }

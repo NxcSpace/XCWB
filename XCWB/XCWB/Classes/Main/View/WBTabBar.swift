@@ -44,6 +44,12 @@ class WBTabBar: UITabBar {
 // MARK: - 事件监听
 extension WBTabBar {
     @objc private func composeBtnClick() {
-        print("composeBtn")
+       
+        guard let vc = UIApplication.shared.keyWindow?.rootViewController else {
+            return
+        }
+        let navi = UINavigationController.init(rootViewController: ComposeViewController())
+        navi.modalPresentationStyle = .fullScreen
+        vc.present(navi, animated: true, completion: nil)
     }
 }

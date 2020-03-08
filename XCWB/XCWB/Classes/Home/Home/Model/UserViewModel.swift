@@ -14,6 +14,8 @@ class UserViewModel: NSObject {
     // MARK:- 对微博数据处理
     var sourceText: String = ""
     var createAtText: String = ""
+    var picUrls = [URL]()
+    var reContentText: String = ""
     
     // MARK:- 对用户数据处理
     var verifiedImage : UIImage?
@@ -51,6 +53,36 @@ extension UserViewModel {
             // 2.2.截取字符串
             sourceText = (source as NSString).substring(with: NSRange(location: startIndex, length: length))
         }
+        
+        // 校验微博配图
+       
+        if status?.retweeted_status != nil {
+            if let urls = status?.retweeted_status?.pic_urls {
+                for dict in urls {
+                    guard let url = dict["thumbnail_pic"] else {
+                        continue
+                    }
+                    picUrls.append(URL(string: url)!)
+                }
+            }
+        } else {
+            if let urls = status?.pic_urls {
+                for dict in urls {
+                    guard let url = dict["thumbnail_pic"] else {
+                        continue
+                    }
+                    picUrls.append(URL(string: url)!)
+                }
+            }
+        }
+
+        // 校验转发
+        if let reContent = status?.retweeted_status?.text,
+            let reUser = status?.retweeted_status?.user?.screen_name{
+            reContentText = "@\(reUser): \(reContent)" 
+        }
+       
+        
     }
 
     private func handlUser() {

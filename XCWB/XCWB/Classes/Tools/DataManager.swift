@@ -54,7 +54,9 @@ extension DataManager{
         xc_getWith(url: "https://api.weibo.com/2/users/show.json", params: params, success: success, fail: fail)
     }
     
-    public func loadStatuses(page: Int,
+    public func loadStatuses(since_id: Int,
+                             max_id: Int,
+                             page: Int,
                              count: Int,
                              success:@escaping ResponseSuccess,
                              fail: @escaping ResponseFail) {
@@ -64,6 +66,8 @@ extension DataManager{
         }
        
         let params = ["access_token":token,
+                      "max_id":max_id,
+                      "since_id":since_id,
                       "page":page,
                       "count":count] as [String : Any]
     
