@@ -73,6 +73,23 @@ extension DataManager{
     
         xc_getWith(url: "https://api.weibo.com/2/statuses/home_timeline.json", params: params, success: success, fail: fail)
     }
+    
+    public func sendStatuses(statusText : String,
+                             success:@escaping ResponseSuccess,
+                             fail: @escaping ResponseFail) {
+       
+        guard let token = UserAccountViewModal.shareIntance.userInfo?.access_token else {
+            return
+        }
+        let wbStatus = "\(statusText)  http://www.xcwb.com/"
+        
+        
+        let params = ["access_token":token,
+                      "status":wbStatus,
+                      ] as [String : Any]
+    
+        xc_postWith(url: "https://api.weibo.com/2/statuses/share.json", params: params, success: success, fail: fail)
+    }
 }
 
 

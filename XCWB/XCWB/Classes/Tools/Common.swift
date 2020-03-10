@@ -12,3 +12,8 @@ import UIKit
 let app_key =       ""
 let app_secret =    ""
 let redirect_uri =  ""
+
+let ModalPicSelectPickerNotifiction = "ModalPicSelectPickerNotifiction"
+
+let DeletePicSelectPickerNotifiction = "DeletePicSelectPickerNotifiction"
+

@@ -44,6 +44,10 @@ class HomeViewController: BaseViewController {
             self.visitorView.addAnimation()
         }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.mj_header?.beginRefreshing()
+    }
 }
 
 // MARK: - UI
@@ -68,7 +72,7 @@ extension HomeViewController {
         self.tableView.estimatedRowHeight = 200
         
         self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: Selector(("loadNewData")))
-        self.tableView.mj_header?.beginRefreshing()
+        
         
         self.tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: Selector(("loadMoreData")))
     }
