@@ -55,26 +55,33 @@ extension UserViewModel {
         }
         
         // 校验微博配图
-       
-        if status?.retweeted_status != nil {
-            if let urls = status?.retweeted_status?.pic_urls {
-                for dict in urls {
-                    guard let url = dict["thumbnail_pic"] else {
-                        continue
-                    }
-                    picUrls.append(URL(string: url)!)
-                }
-            }
-        } else {
-            if let urls = status?.pic_urls {
-                for dict in urls {
-                    guard let url = dict["thumbnail_pic"] else {
-                        continue
-                    }
-                    picUrls.append(URL(string: url)!)
-                }
-            }
-        }
+       if let urls = status?.pic_urls {
+           for dict in urls {
+               guard let url = dict["thumbnail_pic"] else {
+                   continue
+               }
+               picUrls.append(URL(string: url)!)
+           }
+       }
+//        if status?.retweeted_status != nil {
+//            if let urls = status?.retweeted_status?.pic_urls {
+//                for dict in urls {
+//                    guard let url = dict["thumbnail_pic"] else {
+//                        continue
+//                    }
+//                    picUrls.append(URL(string: url)!)
+//                }
+//            }
+//        } else {
+//            if let urls = status?.pic_urls {
+//                for dict in urls {
+//                    guard let url = dict["thumbnail_pic"] else {
+//                        continue
+//                    }
+//                    picUrls.append(URL(string: url)!)
+//                }
+//            }
+//        }
 
         // 校验转发
         if let reContent = status?.retweeted_status?.text,

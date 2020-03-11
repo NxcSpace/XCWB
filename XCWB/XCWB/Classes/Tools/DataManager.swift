@@ -90,6 +90,45 @@ extension DataManager{
     
         xc_postWith(url: "https://api.weibo.com/2/statuses/share.json", params: params, success: success, fail: fail)
     }
+     public   func uploadImage(statusText : String,
+                       image : UIImage,
+                       success:@escaping ResponseSuccess,
+                       fail: @escaping ResponseFail){
+            var header = HTTPHeaders()
+            header.add(name: "content-type", value: "multipart/form-data")
+        guard let token = UserAccountViewModal.shareIntance.userInfo?.access_token else {
+                   return
+               }
+         let wbStatus = "\(statusText)  http://www.xcwb.com/"
+               
+               
+               let params = ["access_token":token,
+                             "status":wbStatus,
+                             ] as [String : Any]
+        
+            AF.upload(multipartFormData: { (formData) in
+                
+                if let imageData = image.jpegData(compressionQuality: 0.5) {
+                    for p in params {
+                               formData.append("\(p.value)".data(using: String.Encoding.utf8)!, withName: p.key)
+                           }
+                    formData.append(imageData, withName: "pic", fileName:  "123.png", mimeType: "image/png")
+                }
+                
+            }, to: URL(string: "https://api.weibo.com/2/statuses/share.json")!, usingThreshold: MultipartFormData.encodingMemoryThreshold, method: .post, headers: header, interceptor: nil, fileManager: .default).responseJSON { (response) in
+                switch response.result {
+                case .success:
+                    let json = String(data: response.data!, encoding: String.Encoding.utf8)
+                    success(json ?? "")
+                case .failure:
+                    let statusCode = response.response?.statusCode
+                    fail("\(statusCode ?? 0)请求失败")
+                    debugPrint(response.response as Any)
+                }
+            }
+            
+        }
+    
 }
 
 
@@ -157,6 +196,7 @@ extension DataManager {
                              params: [String: Any],
                              success: @escaping ResponseSuccess,
                              error: @escaping ResponseFail) {
+        
          //请求头信息
          //var header = HTTPHeaders()
          //header.add(name: "dragon-system", value: FSRequestData.share.getHeaderJson())

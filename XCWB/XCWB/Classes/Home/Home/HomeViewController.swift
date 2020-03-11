@@ -142,15 +142,24 @@ extension HomeViewController {
             guard let json = try?JSONSerialization.jsonObject(with: data, options: .mutableContainers) else {
                 return
             }
-            
+            guard let jsonNSD = json as? NSDictionary else {
+                return
+            }
             guard let jsonDict = json as? [String: Any] else {
                 return
             }
+            
+            
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
+            let dp = (path as NSString).appendingPathComponent("dict.plist")
+            jsonNSD.write(toFile: dp, atomically: true)
             
             guard let array = jsonDict["statuses"] as? Array<Dictionary<String, Any>> else {
                 print("转数组失败")
                 return
             }
+        
+           
             var tmpArray = Array<UserViewModel>()
             for dict in array {
                 tmpArray.append(UserViewModel(dict: dict))

@@ -57,6 +57,8 @@
 		E75B48C224152FD80046017E /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48C024152FD80046017E /* ComposeViewController.swift */; };
 		E75B48C324152FD80046017E /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75B48C124152FD80046017E /* ComposeViewController.xib */; };
 		E75B48C5241535170046017E /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B48C4241535170046017E /* ComposeTitleView.swift */; };
+		E79735F72418FDB6006FCD75 /* FindEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79735F62418FDB6006FCD75 /* FindEmoticon.swift */; };
+		E79735F92418FFDC006FCD75 /* HYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79735F82418FFDC006FCD75 /* HYLabel.swift */; };
 		E7A27ACA240E963300D6DF9B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E7A27AC9240E963300D6DF9B /* MainVCSettings.json */; };
 		E7A27ACE240EB53300D6DF9B /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,8 @@
 		E75B48C024152FD80046017E /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		E75B48C124152FD80046017E /* ComposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
 		E75B48C4241535170046017E /* ComposeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
+		E79735F62418FDB6006FCD75 /* FindEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmoticon.swift; sourceTree = "<group>"; };
+		E79735F82418FFDC006FCD75 /* HYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLabel.swift; sourceTree = "<group>"; };
 		E7A27AC9240E963300D6DF9B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		E7A27ACD240EB53300D6DF9B /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,8 +212,10 @@
 		E73DAEE92417C09000C8C3E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E79735F82418FFDC006FCD75 /* HYLabel.swift */,
 				E73DAEEA2417C09000C8C3E8 /* EmoCollectionViewCell.swift */,
 				E73DAEEB2417C09000C8C3E8 /* UITextView-Extension.swift */,
+				E79735F62418FDB6006FCD75 /* FindEmoticon.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E705D9662410CFC1002C349E /* WBPresentationController.swift in Sources */,
+				E79735F92418FFDC006FCD75 /* HYLabel.swift in Sources */,
 				E73F7CF724120D8A002B841A /* DataManager.swift in Sources */,
 				E73DAEF12417C09000C8C3E8 /* Emoticn.swift in Sources */,
 				E753FDCF240E78E000ECDD75 /* ProfileViewController.swift in Sources */,
@@ -556,6 +563,7 @@
 				E705D96824112977002C349E /* PopoverAnimator.swift in Sources */,
 				E73DAEF22417C09000C8C3E8 /* EmoCollectionViewCell.swift in Sources */,
 				E72B8565240F605700F1ECCC /* VisitorView.swift in Sources */,
+				E79735F72418FDB6006FCD75 /* FindEmoticon.swift in Sources */,
 				E75B48B22413BFC30046017E /* User.swift in Sources */,
 				E73DAEF32417C09000C8C3E8 /* UITextView-Extension.swift in Sources */,
 				E75B48B72413D0030046017E /* HomeViewCell.swift in Sources */,

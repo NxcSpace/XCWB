@@ -114,12 +114,25 @@ extension ComposeViewController {
     
     @objc private func sendItemClick() {
         SVProgressHUD.show()
-        DataManager.manager.sendStatuses(statusText: compTextView.getEmoticonsStr(), success: { (resp) in
-            SVProgressHUD.showSuccess(withStatus: "发送成功")
-            self.dismiss(animated: true, completion: nil)
-        }) { (eror) in
-            
+        if imageArr.count > 0 {
+            DataManager.manager.uploadImage(statusText: compTextView.getEmoticonsStr(), image: imageArr.first!, success: { (resp) in
+                print(resp)
+                SVProgressHUD.showSuccess(withStatus: "发送成功")
+                self.dismiss(animated: true, completion: nil)
+            }) { (error) in
+                
+            }
+        }else {
+            DataManager.manager.sendStatuses(statusText: compTextView.getEmoticonsStr(), success: { (resp) in
+                SVProgressHUD.showSuccess(withStatus: "发送成功")
+                self.dismiss(animated: true, completion: nil)
+            }) { (eror) in
+                
+            }
         }
+        
+        
+        
     }
     // 键盘显示
     @objc func keyboardWillShow(notification: Notification) {

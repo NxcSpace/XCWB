@@ -38,7 +38,7 @@ class HomeViewCell: UITableViewCell {
             nameLabel.text = user.status?.user?.screen_name
             vipView.image = user.verifiedImage
             iconView.image = user.vipImage
-            contentLabel.text = user.status?.text
+            contentLabel.attributedText = FindEmoticon.emoticon.findEmojiReplaceAttrStr(str: user.status?.text, font: contentLabel.font)
             timeLabel.text = user.createAtText
             sourceLabel.text = user.sourceText
             

@@ -9,9 +9,9 @@
 import UIKit
 
 // MARK:- 授权的常量
-let app_key =       ""
-let app_secret =    ""
-let redirect_uri =  ""
+let app_key =       "æ"
+let app_secret =    "æ"
+let redirect_uri =  "æ"
 
 let ModalPicSelectPickerNotifiction = "ModalPicSelectPickerNotifiction"
 
